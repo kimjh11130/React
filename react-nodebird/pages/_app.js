@@ -1,7 +1,21 @@
-import '../styles/globals.css'
+import React from 'react';
+import PropTypes from "prop-types"
+import "antd/dist/antd.css"
+import Head from 'next/head';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const NodeBird = ({ Component }) => {
+  return (
+    <>
+      <Head>
+        <title>NodeBird</title>
+      </Head>
+      <Component />
+    </>
+  );
+};
 
-export default MyApp
+NodeBird.propTypes = {
+  Component: PropTypes.elementType.isRequired,
+};
+
+export default NodeBird;

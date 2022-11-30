@@ -56,7 +56,7 @@ export default App;
 const Wrapper = styled.div`
   display: flex;
   max-width: 680px;
-  width: 100%;
+  width: 100vw;
   margin: 0 auto;
   justify-content: center;
   align-items: center;

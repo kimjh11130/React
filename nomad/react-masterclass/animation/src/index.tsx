@@ -2,7 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { RecoilRoot } from "recoil";
 import { ThemeProvider, createGlobalStyle } from "styled-components";
-import App from "./App";
+import { RouterProvider } from "react-router-dom"
+import router from "./Router";
 import { darkTheme } from "./theme";
 
 const GlobalStyle = createGlobalStyle`
@@ -62,7 +63,6 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   color:black;
   line-height: 1.2;
-  background: linear-gradient(135deg,#e09,#d0e);
 }
 a {
   text-decoration:none;
@@ -74,7 +74,7 @@ ReactDOM.render(
     <RecoilRoot>
       <ThemeProvider theme={darkTheme}>
         <GlobalStyle />
-        <App />
+        <RouterProvider router={router} />
       </ThemeProvider>
     </RecoilRoot>
   </React.StrictMode>,

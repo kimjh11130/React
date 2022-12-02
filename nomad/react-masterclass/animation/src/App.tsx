@@ -1,7 +1,13 @@
+import { Outlet } from "react-router-dom"
+import Header from "./components/Header"
+
 function App(){
-  return <div>
-    this is animation with framer-motion
-  </div>
+  return (
+    <>
+      <Header />
+      <Outlet />
+    </>
+  )
 }
 
 export default App

@@ -1,7 +1,9 @@
 import React from 'react';
 
-const Tv = () => {
-  return null
+const TV = () => {
+  return (
+    <h1>Tv</h1>
+  );
 };
 
-export default Tv;
+export default TV;
